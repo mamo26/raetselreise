@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Die Reise zu Licht, Klang und Wind – Rätsel</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Die Reise zu Licht, Klang und Wind</h1>
+    <p class="subtitle">Fünf Tore, fünf Rätsel – jedes enthüllt ein Stück der Wahrheit.</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p>Die Rätsel werden in festgelegten Etappen freigeschaltet. Wenn ein Rätsel noch gesperrt ist, siehst du einen Countdown bis zur Freigabe.</p>
+      <div class="countdown" id="nextCountdown" aria-live="polite"></div>
+    </section>
+
+    <section id="raetselList" class="raetsel-list" aria-label="Rätselliste">
+      <!-- Rätsel-Kacheln werden durch script.js eingefügt -->
+    </section>
+
+    <section class="hint">
+      <details>
+        <summary>Admin/Override (optional)</summary>
+        <div class="override">
+          <label for="code">Geheimcode:</label>
+          <input type="password" id="code" placeholder="Code eingeben" />
+          <button id="unlockAll">Alle Rätsel temporär freischalten</button>
+          <p class="small">Hinweis: Dieses Feature ist optional und nur für Organisatoren gedacht.</p>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 – Rätselreise</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
